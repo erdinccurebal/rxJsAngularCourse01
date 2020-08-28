@@ -1,3 +1,9 @@
 <h1>RxJs Angular Course01</h1>
+<h2>Nurcan Timer: {{time}}</h2>
+<button type="button" (click)="startTimer()" [disabled]='status'>Start Timer</button>
+<button type="button" (click)="stopTimer()" [disabled]='!status'>Stop Timer</button>
+<button type="button" (click)="resetTimer()" [disabled]='time == 0'>Reset Timer</button>
+<button type="button" (click)="resetAndStartTimer()" [disabled]='!status'>Reset and Start Timer</button>
+
 
 <router-outlet></router-outlet>
