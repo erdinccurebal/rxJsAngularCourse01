@@ -1,3 +1,18 @@
 <h1>RxJs Angular Course01</h1>
-
+<table style="width:100%; text-align: left;">
+  <tr>
+    <th>ID</th>
+    <th>Fullname</th>
+    <th>Email</th>
+    <th>Phone</th>
+    <th>Website</th>
+  </tr>
+  <tr *ngFor="let user of users">
+    <td>{{ user.id }}</td>
+    <td>{{ user.name }}</td>
+    <td>{{ user.email }}</td>
+    <td>{{ user.phone }}</td>
+    <td>{{ user.website }}</td>
+  </tr>
+</table>
 <router-outlet></router-outlet>

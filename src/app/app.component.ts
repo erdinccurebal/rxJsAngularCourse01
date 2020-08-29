@@ -7,9 +7,11 @@ import { AppService } from './app.service';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+  users;
+
   constructor(
     private appService: AppService
   ) {
-
+    this.appService.getAllUser().subscribe(data => this.users = data);
   }
 }
