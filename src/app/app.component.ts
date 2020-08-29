@@ -7,9 +7,13 @@ import { AppService } from './app.service';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+
+
   constructor(
     private appService: AppService
   ) {
-
+    this.appService.myFnAjax().subscribe(data => {
+      console.log(data);
+    });
   }
 }
