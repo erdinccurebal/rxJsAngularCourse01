@@ -10,6 +10,7 @@ export class AppService {
 
   constructor() { }
 
+  // ? Filter Operatorü dizin getirir ve net aramalar yapılır tek harf aranmaz.
   findAll(): Observable<any> {
     return ajax.getJSON('https://jsonplaceholder.typicode.com/users')
       .pipe(
