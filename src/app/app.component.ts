@@ -9,7 +9,7 @@ import { fromEvent, interval } from 'rxjs';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent implements AfterViewInit {
-  @ViewChild(ChildComponent) childComponentRef: ChildComponent;
+  @ViewChild(ChildComponent, {static: false}) childComponentRef: ChildComponent;
 
   constructor(private appService: AppService) {}
   ngAfterViewInit(): void {
