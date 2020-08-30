@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { AppService } from './app.service';
 
+// ? Last Operatörü son objeyi döner,Koşullu bir şekildede sondakini getirebilir üçe bölünenlerin en sonu gibi.
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',

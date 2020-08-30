@@ -10,7 +10,6 @@ export class AppService {
 
   constructor() { }
 
-  // ? Last Operatörü son objeyi döner,Koşullu bir şekildede sondakini getirebilir üçe bölünenlerin en sonu gibi.
   findAllUser(): Observable<any> {
     return ajax.getJSON('https://jsonplaceholder.typicode.com/users')
       .pipe(
