@@ -9,7 +9,6 @@ import { ajax } from 'rxjs/ajax';
 export class AppService {
   constructor() {}
 
-  // ? Skip Operator almış olduğu kadar atlama gerçekleştirir.
   listAllUser(): Observable<any> {
     return ajax.getJSON('https://jsonplaceholder.typicode.com/users').pipe(
       mergeMap((data: any) => from(data)),
