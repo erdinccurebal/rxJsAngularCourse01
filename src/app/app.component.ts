@@ -10,7 +10,6 @@ import { throttle } from 'rxjs/operators';
 })
 export class AppComponent {
   constructor(private appService: AppService) {
-    // ? Throttle Operator observable 'dan gelen veriyi belirli bir süre engeller
     const myInterval = interval(1000);
     myInterval
       .pipe(throttle((value) => interval(2000)))
