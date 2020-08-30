@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { timer } from 'rxjs';
 import { AppService } from './app.service';
 
+// ? Timer Operatörü belirlenen saniye kadar bekleyebilir ve istersen tekrar edebilir.
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
