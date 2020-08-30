@@ -18,7 +18,6 @@ import { skipUntil } from 'rxjs/operators';
 export class AppComponent implements OnInit, AfterViewInit, OnDestroy {
   constructor(private appService: AppService) {}
 
-  // ? SkipUntil Operatörü içine bir observable alır ve sub olduğunda akışa izin verir.
   @ViewChild('myHtmlButton') myButton: ElementRef;
 
   myInterval = interval(1000);
