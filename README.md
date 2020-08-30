@@ -56,7 +56,7 @@
 
 ## Transformation Operators
 
-**3_1 Map Operator Özelliği:**
+**3_1 Map Operator Özelliği:** Map Operatör gelen datayı düzenlemize yarar.
 
 **3_2 MapTo Operator Özelliği:**
 
