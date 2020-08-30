@@ -4,7 +4,6 @@ import { AppService } from './app.service';
 import { ajax } from 'rxjs/ajax';
 import { FormControl } from '@angular/forms';
 
-// ? Interval Operatörü belirlediginiz saniyeyi tekrarlar.
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
