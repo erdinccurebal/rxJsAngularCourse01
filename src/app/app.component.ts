@@ -11,8 +11,6 @@ import {} from 'rxjs/ajax';
 })
 export class AppComponent {
   constructor(private appService: AppService) {
-
-    // ? SkipWhile Operatörü şarta bağlı olarak atlama yapar.
     from([2, 3, 4, 6, 8, 3, 13123, 133131, 124])
       .pipe(skipWhile((value, index) => value < 5))
       .subscribe((data) => console.log(data));
