@@ -1,3 +1,3 @@
 # RxJsAngularCourse01
 
-Başlangıç Projesi
+RxJs Angular Başlangıç Teması
