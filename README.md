@@ -1,3 +1,3 @@
 # RxJsAngularCourse01
 
-Of Operatörü herhangi birşeyi observable cevirir.
+**Operatör Özelliği:** Of Operatörü herhangi birşeyi observable cevirir.
