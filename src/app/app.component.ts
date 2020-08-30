@@ -4,6 +4,7 @@ import { ChildComponent } from './child/child.component';
 import { from, fromEvent, interval, Subscription } from 'rxjs';
 import { debounceTime, distinctUntilChanged, map, startWith } from 'rxjs/operators';
 
+// ? FromEvent Operatörü Dom eventlerini yaklayıp işlem yapmanızı sağlar.
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
