@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { AppService } from './app.service';
 
+// ? Defer Operatörü observable ' yi çağırdığız an gelir. Zamanlarda çok kullanılır Date().
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
