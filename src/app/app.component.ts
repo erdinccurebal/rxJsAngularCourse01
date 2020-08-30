@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { AppService } from './app.service';
 
+// ? Ajax Operatörü api ile iletişim kurmanızı sağlar.
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
