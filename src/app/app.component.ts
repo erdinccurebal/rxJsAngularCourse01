@@ -1,17 +1,13 @@
 import { Component } from '@angular/core';
 import { AppService } from './app.service';
 
-// ? Create Operatörü Observable oluşturmaya yarar.
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-
-  constructor(
-    private appService: AppService
-  ) {
-    this.appService.mainObservable.subscribe(data => console.log(data));
+  constructor(private appService: AppService) {
+    this.appService.mainObservable.subscribe((data) => console.log(data));
   }
 }
