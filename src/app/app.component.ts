@@ -1,8 +1,6 @@
 import { Component } from '@angular/core';
 import { AppService } from './app.service';
-
-import { from, of } from 'rxjs';
-import { mergeAll, mergeMap, toArray } from 'rxjs/operators';
+import { of } from 'rxjs';
 import { ajax } from 'rxjs/ajax';
 
 @Component({
@@ -19,8 +17,6 @@ export class AppComponent {
   myFunction(): void {
     console.log('deneme');
   }
-
-  // ? Of Operatörü herhangi birşeyi observable cevirir.
 
   constructor(private appService: AppService) {
     this.myString = 'Full Stack Developer';
