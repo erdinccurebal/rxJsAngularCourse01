@@ -1,10 +1,20 @@
-import { AfterViewInit, Component, ElementRef, OnDestroy, ViewChild } from '@angular/core';
+import {
+  AfterViewInit,
+  Component,
+  ElementRef,
+  OnDestroy,
+  ViewChild,
+} from '@angular/core';
 import { AppService } from './app.service';
 import { ChildComponent } from './child/child.component';
-import { from, fromEvent, interval, Subscription } from 'rxjs';
-import { debounceTime, distinctUntilChanged, map, startWith } from 'rxjs/operators';
+import { fromEvent, interval, Subscription } from 'rxjs';
+import {
+  debounceTime,
+  distinctUntilChanged,
+  map,
+  startWith,
+} from 'rxjs/operators';
 
-// ? FromEvent Operatörü Dom eventlerini yaklayıp işlem yapmanızı sağlar.
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -19,19 +29,17 @@ export class AppComponent implements AfterViewInit, OnDestroy {
 
   private subscription: Subscription;
 
-  constructor(private appService: AppService) { }
+  constructor(private appService: AppService) {}
 
   ngAfterViewInit(): void {
-
-    const eventInput = fromEvent<any>(this.myInput.nativeElement, 'keyup')
-      .pipe(
-        map(event => event.target.value),
-        startWith(''),
-        debounceTime(400),
-        distinctUntilChanged()
+    const eventInput = fromEvent<any>(this.myInput.nativeElement, 'keyup').pipe(
+      map((event) => event.target.value),
+      startWith(''),
+      debounceTime(400),
+      distinctUntilChanged()
     );
 
-    this.subscription = eventInput.subscribe(data => console.log(data));
+    this.subscription = eventInput.subscribe((data) => console.log(data));
 
     fromEvent(
       this.childComponentRef.myDateCaller.nativeElement,
