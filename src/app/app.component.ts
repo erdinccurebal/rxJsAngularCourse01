@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { AppService } from './app.service';
 
-// ? Find operatorü tek obje döner ve net aramalar yapılır , tek harf aranmaz, hata mesajı dönmez.
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',

@@ -1,6 +1,5 @@
 import { Injectable } from '@angular/core';
 import { from, Observable } from 'rxjs';
-import {} from 'rxjs';
 import { ajax } from 'rxjs/ajax';
 import { find, mergeMap } from 'rxjs/operators';
 
