@@ -4,18 +4,15 @@ import { last, mergeMap } from 'rxjs/operators';
 import { ajax } from 'rxjs/ajax';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class AppService {
-
-  constructor() { }
+  constructor() {}
 
   findAllUser(): Observable<any> {
-    return ajax.getJSON('https://jsonplaceholder.typicode.com/users')
-      .pipe(
-        mergeMap((data: any) => from(data)),
-        last()
-      );
+    return ajax.getJSON('https://jsonplaceholder.typicode.com/users').pipe(
+      mergeMap((data: any) => from(data)),
+      last()
+    );
   }
-
 }
