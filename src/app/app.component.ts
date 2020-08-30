@@ -1,15 +1,37 @@
-import { Component } from '@angular/core';
+import {
+  AfterViewInit,
+  Component,
+  ElementRef,
+  OnDestroy,
+  OnInit,
+  ViewChild,
+} from '@angular/core';
+import { fromEvent, interval } from 'rxjs';
 import { AppService } from './app.service';
+import { skipUntil } from 'rxjs/operators';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  styleUrls: ['./app.component.scss'],
 })
-export class AppComponent {
-  constructor(
-    private appService: AppService
-  ) {
+export class AppComponent implements OnInit, AfterViewInit, OnDestroy {
+  constructor(private appService: AppService) {}
 
+  // ? SkipUntil Operatörü içine bir observable alır ve sub olduğunda akışa izin verir.
+  @ViewChild('myHtmlButton') myButton: ElementRef;
+
+  myInterval = interval(1000);
+
+  ngOnInit(): void {}
+
+  ngAfterViewInit(): void {
+    const myFromEvent = fromEvent<any>(this.myButton.nativeElement, 'click');
+
+    this.myInterval.pipe(skipUntil(myFromEvent)).subscribe((data) => {
+      console.log(data);
+    });
   }
+
+  ngOnDestroy(): void {}
 }
