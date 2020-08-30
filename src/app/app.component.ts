@@ -20,6 +20,7 @@ export class AppComponent {
     console.log('deneme');
   }
 
+  // ? Of Operatörü herhangi birşeyi observable cevirir.
 
   constructor(private appService: AppService) {
     this.myString = 'Full Stack Developer';
