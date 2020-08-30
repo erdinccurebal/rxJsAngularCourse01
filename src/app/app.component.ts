@@ -1,22 +1,19 @@
 import { Component } from '@angular/core';
 import { AppService } from './app.service';
 
-// ? Defer Operatörü observable ' yi çağırdığız an gelir. Zamanlarda çok kullanılır Date().
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  constructor(
-    private appService: AppService
-  ) {
-    this.appService.myDate.subscribe(data => {
+  constructor(private appService: AppService) {
+    this.appService.myDate.subscribe((data) => {
       console.log('Normal Date: ' + data);
     });
 
     this.appService.myTimer.subscribe(() => {
-      this.appService.myDeferDate.subscribe(data => {
+      this.appService.myDeferDate.subscribe((data) => {
         console.log('Defer Date: ' + data);
       });
     });
