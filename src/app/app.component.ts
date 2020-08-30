@@ -1,18 +1,15 @@
 import { Component } from '@angular/core';
 import { AppService } from './app.service';
 
-// ? Ajax Operatörü api ile iletişim kurmanızı sağlar.
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
   users;
 
-  constructor(
-    private appService: AppService
-  ) {
-    this.appService.getAllUser().subscribe(data => this.users = data);
+  constructor(private appService: AppService) {
+    this.appService.getAllUser().subscribe((data) => (this.users = data));
   }
 }
