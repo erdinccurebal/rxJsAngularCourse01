@@ -41,10 +41,9 @@ export class AppComponent {
 
     this.myAjaxFn('1').subscribe((data) => this.mySubject.next(data));
 
-    this.myInput.valueChanges.subscribe(id => {
-        this.myAjaxFn(id).subscribe((data) => this.mySubject.next(data));
+    this.myInput.valueChanges.subscribe((id) => {
+      this.myAjaxFn(id).subscribe((data) => this.mySubject.next(data));
     });
-
   }
 
   stopSubject(): void {
