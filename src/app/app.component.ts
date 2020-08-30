@@ -3,6 +3,7 @@ import { from } from 'rxjs';
 import { delay, tap } from 'rxjs/operators';
 import { AppService } from './app.service';
 
+// ? From Operatörü belirlenin içini yayınlar.
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
