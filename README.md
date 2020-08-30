@@ -1,3 +1,3 @@
 # RxJsAngularCourse01
 
-RxJs Angular Başlangıç Teması
+**Operatör Özelliği:** Map Operatör gelen datayı düzenlemize yarar.
