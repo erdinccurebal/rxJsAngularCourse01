@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { AppService } from './app.service';
 
+// ? Create Operatörü Observable oluşturmaya yarar.
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
