@@ -10,7 +10,6 @@ import { throttleTime } from 'rxjs/operators';
 })
 export class AppComponent {
   constructor(private appService: AppService) {
-    // ? ThrottleTime belirli bir süre veri gelmesini engeller.
     const myInterval = interval(1000);
     myInterval.pipe(throttleTime(3000)).subscribe((data) => console.log(data));
   }
