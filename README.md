@@ -1,3 +1,3 @@
 # RxJsAngularCourse01
 
-RxJs Angular Başlangıç Teması
+**Operatör Özelliği:** Operatörleri birbirine bağlamaya yarar ve tek cıkış datası yaratır.
