@@ -1,3 +1,3 @@
 # RxJsAngularCourse01
 
-RxJs Angular Başlangıç Teması
+**Operator Özelliği:** ConcatMap Operatörü mergemap 'de benzer ama ConcatMap Operatörünün içindeki veriler bitmeden yayınlamasına izin vermez.
