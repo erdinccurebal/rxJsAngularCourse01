@@ -10,6 +10,6 @@ export class AppComponent {
   constructor(
     private appService: AppService
   ) {
-
+    this.appService.getAllUsers().subscribe(data => console.log(data));
   }
 }
