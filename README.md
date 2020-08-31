@@ -58,9 +58,9 @@
 
 **3_1 Map Operator Özelliği:** Map Operatör gelen datayı düzenlemize yarar.
 
-**3_2 MapTo Operator Özelliği:**
+**3_2 MapTo Operator Özelliği:** MapTo Operatör sabit bir değer göndermeye yarar.
 
-**3_3 MergeMap Operator Özelliği:**
+**3_3 MergeMap Operator Özelliği:** MergeMap Operatörü Dıştaki observable'yi bekletiyor ve bütün veriyi aldıktan sonra hepsini yayınlar. Api'larda çok kullanılır çekilen veriyi mergeMap Edip farklı bir api istek yapılabilir.
 
 **3_4 Switch Operator Özelliği:**
 
