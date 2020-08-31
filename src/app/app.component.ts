@@ -1,5 +1,8 @@
 import { Component } from '@angular/core';
 import { AppService } from './app.service';
+import { forkJoin } from 'rxjs';
+import {} from 'rxjs/operators';
+import { ajax } from 'rxjs/ajax';
 
 @Component({
   selector: 'app-root',
@@ -10,6 +13,12 @@ export class AppComponent {
   constructor(
     private appService: AppService
   ) {
-
+    forkJoin({
+      users: ajax.getJSON('https://jsonplaceholder.typicode.com/users'),
+      posts: ajax.getJSON('https://jsonplaceholder.typicode.com/posts'),
+      photos: ajax.getJSON('https://jsonplaceholder.typicode.com/photos')
+    }).subscribe(data => {
+      console.log(data);
+    });
   }
 }

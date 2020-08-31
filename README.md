@@ -1,3 +1,3 @@
 # RxJsAngularCourse01
 
-RxJs Angular Başlangıç Teması
+**Operatör Özelliği:** ForkJoin Operatörü birder fazla observable alabilir ve içindeki bütün observable'ler yayınlaması bittikten sonra veriyi yayınlar.
