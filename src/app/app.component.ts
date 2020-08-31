@@ -33,7 +33,7 @@ export class AppComponent {
         })
       );
 
-    concat(ajaxUsers, ajaxPosts, ajaxPhotos).subscribe((data) =>
+    concat(ajaxUsers, ajaxPosts, ajaxPhotos).subscribe((data: any) =>
       console.log(data)
     );
   }
