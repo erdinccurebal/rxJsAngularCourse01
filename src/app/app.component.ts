@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
+import { range } from 'rxjs';
 import { AppService } from './app.service';
+import { tap } from 'rxjs/operators';
 
 @Component({
   selector: 'app-root',
@@ -10,6 +12,8 @@ export class AppComponent {
   constructor(
     private appService: AppService
   ) {
+
+    range(1, 20).pipe(tap(data => console.log('Gelen Data: ' + data))).subscribe(data => console.log(data));
 
   }
 }

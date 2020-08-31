@@ -1,3 +1,3 @@
 # RxJsAngularCourse01
 
-RxJs Angular Başlangıç Teması
+**Operatör Özelliği:** Tap Operatörü akışı bozmadan dışarı veri atar örnek olarak loglama yapılabilir.
