@@ -1,3 +1,3 @@
 # RxJsAngularCourse01
 
-RxJs Angular Başlangıç Teması
+**Operator Özelliği:** Array çevirir.
