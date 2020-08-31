@@ -1,3 +1,3 @@
 # RxJsAngularCourse01
 
-RxJs Angular Başlangıç Teması
+**Operatör Özelliği:** Concat Operatörü observable'leri birleştirir ama sırayla tek tek yayınlar biri bitmeden diğerini yayınlamaz.
