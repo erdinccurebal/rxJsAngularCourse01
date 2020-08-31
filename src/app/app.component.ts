@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { AppService } from './app.service';
 import { forkJoin } from 'rxjs';
-import {} from 'rxjs/operators';
+import { startWith } from 'rxjs/operators';
 import { ajax } from 'rxjs/ajax';
 
 @Component({
@@ -17,7 +17,7 @@ export class AppComponent {
       users: ajax.getJSON('https://jsonplaceholder.typicode.com/users'),
       posts: ajax.getJSON('https://jsonplaceholder.typicode.com/posts'),
       photos: ajax.getJSON('https://jsonplaceholder.typicode.com/photos')
-    }).subscribe(data => {
+    }).pipe(startWith('Loading...')).subscribe(data => {
       console.log(data);
     });
   }
