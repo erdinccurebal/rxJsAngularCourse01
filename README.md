@@ -1,3 +1,3 @@
 # RxJsAngularCourse01
 
-RxJs Angular Başlangıç Teması
+**Operatör Özelliği:** Reduce Operatörü Sarı aralıgını veya index aralıgını toplamaya veya index yazdırmaya yarar. 
