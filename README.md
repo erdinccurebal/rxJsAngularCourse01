@@ -94,35 +94,22 @@
 
 **5_3 Finalize Operator Özelliği:** Observable veri çekme işlemini bitirdikten sonra gönderilcek method. Observable devamınına girmez dışarı veri atar.
 
-**5_4 Repeat Operator Özelliği:**
+**5_4 Repeat Operator Özelliği:** Repeat operatörü observableyi tekrar eder sub olan veriyi tekrar cekmez observableyi tekrardan başlatarak veriyi ceker.
 
-**5_5 TimeOut Operator Özelliği:**
+**5_5 TimeOut Operator Özelliği:** TimeOut Operatörü veri istenilen zamanda gelmezse hata fırlatılır.
 
-**5_6 Retry Operator Özelliği:**
+**5_6 Retry Operator Özelliği:** Retry Operatörü veri başarısız gelirse tekrar çalışır, operatör içine integer değer alır ve tekrarlar.
 
-**5_7 RetryWhen Operator Özelliği:**
+**5_7 RetryWhen Operator Özelliği:** RetryWhen Operatörü Gelen veri hata verirse baştan tekrar eder ve hatayı yakalar.
 
-**5_8 CatchError Operator Özelliği:**
+**5_8 CatchError Operator Özelliği:** CatchError Operatörü hatayı yakalamasınızı ve subscribe olmadan düzenlemenizi sağlar.
 
 
 ## Subjects
-**6_1 Normal Subject Özelliği:**
+**6_1 Normal Subject Özelliği:** Standart Subject Operatörü her componentden daha alıpda yayını bütün componentlere yapmaya yarar herkesin gönderebildigi ve herkesin okuyabildiği bir iletişim kanalı.
 
 **6_2 Async Subject Özelliği:**
 
 **6_3 Behavior Subject Özelliği:**
 
 **6_4 Replay Subject Özelliği:**
-
-
-## Examples
-
-**7_1 Examples Subject:**
-
-**7_2 Examples Subject:**
-
-**7_3 Examples Subject:**
-
-**7_4 Examples Subject:**
-
-**7_5 Examples Subject:**
