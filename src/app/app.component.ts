@@ -13,11 +13,7 @@ export class AppComponent {
   constructor(private appService: AppService) {
     ajax
       .getJSON('https://jsonplaceholder.typicode.com/users')
-      .pipe(
-        delay(3000),
-        timeout(2000),
-        catchError((err) => of(console.log('err'))),
-      )
+      .pipe(repeat(5))
       .subscribe((data) => console.log(data));
   }
 }
