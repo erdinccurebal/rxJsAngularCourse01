@@ -1,3 +1,3 @@
 # RxJsAngularCourse01
 
-RxJs Angular Başlangıç Teması
+**Operatör Özelliği:** TimeOut Operatörü veri istenilen zamanda gelmezse hata fırlatılır.
