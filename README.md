@@ -108,8 +108,8 @@
 ## Subjects
 **6_1 Normal Subject Özelliği:** Standart Subject Operatörü her componentden daha alıpda yayını bütün componentlere yapmaya yarar herkesin gönderebildigi ve herkesin okuyabildiği bir iletişim kanalı.
 
-**6_2 Async Subject Özelliği:**
+**6_2 Behavior Subject Özelliği:** BehaviorSubject Operatörü içine ilk değer almak zorundadır standart subject dir, tek fark ilk değer alır.
 
-**6_3 Behavior Subject Özelliği:**
+**6_3 Async Subject Özelliği:** aSyncSubject Operatörü gelen son veriyi alır yani son next alır , zaten hepsi standart subject özelleştirişmiş hali. Önemli not next.complate methodunu alması zorunludur. son veriyi ne zaman alıcagı belirtilmesi gerek.
 
-**6_4 Replay Subject Özelliği:**
+**6_4 Replay Subject Özelliği:** ReplaySubject Operatorü üstten gelen verileri sınırlayabilir sub olmadan önce yayınlanan veriler sınırlanabilir ve üstten alttanda veri alabilir, ve hepsini yayınlar, verilen integer deger kadar sınırlabilir.
