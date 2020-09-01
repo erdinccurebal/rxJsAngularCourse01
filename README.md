@@ -90,29 +90,29 @@
 
 **5_1 Tap Operator Özelliği:** Tap Operatörü akışı bozmadan dışarı veri atar örnek olarak loglama yapılabilir.
 
-**5_1 DelayWhen Operator Özelliği:** DelayWhen Operatörü saniye bazında çalışmaz, dışardan bir observable alır ve o observable çalışana kadar ana observableyi bekletir ve özellikle veri gelene kadar observable çalışmamış olur. Observableyi bekletir.
+**5_2 DelayWhen Operator Özelliği:** DelayWhen Operatörü saniye bazında çalışmaz, dışardan bir observable alır ve o observable çalışana kadar ana observableyi bekletir ve özellikle veri gelene kadar observable çalışmamış olur. Observableyi bekletir.
 
-**5_1 Finalize Operator Özelliği:** Observable veri çekme işlemini bitirdikten sonra gönderilcek method. Observable devamınına girmez dışarı veri atar.
+**5_3 Finalize Operator Özelliği:** Observable veri çekme işlemini bitirdikten sonra gönderilcek method. Observable devamınına girmez dışarı veri atar.
 
-**5_1 Repeat Operator Özelliği:**
+**5_4 Repeat Operator Özelliği:**
 
-**5_1 TimeOut Operator Özelliği:**
+**5_5 TimeOut Operator Özelliği:**
 
-**5_1 Retry Operator Özelliği:**
+**5_6 Retry Operator Özelliği:**
 
-**5_1 RetryWhen Operator Özelliği:**
+**5_7 RetryWhen Operator Özelliği:**
 
-**5_1 CatchError Operator Özelliği:**
+**5_8 CatchError Operator Özelliği:**
 
 
 ## Subjects
 **6_1 Normal Subject Özelliği:**
 
-**6_1 Async Subject Özelliği:**
+**6_2 Async Subject Özelliği:**
 
-**6_1 Behavior Subject Özelliği:**
+**6_3 Behavior Subject Özelliği:**
 
-**6_1 Replay Subject Özelliği:**
+**6_4 Replay Subject Özelliği:**
 
 
 ## Examples
