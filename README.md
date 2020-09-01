@@ -1,3 +1,3 @@
 # RxJsAngularCourse01
 
-RxJs Angular Başlangıç Teması
+**Operatör Özelliği:** CatchError Operatörü hatayı yakalamasınızı ve subscribe olmadan düzenlemenizi sağlar.
