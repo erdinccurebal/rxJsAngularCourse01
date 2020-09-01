@@ -1,3 +1,3 @@
 # RxJsAngularCourse01
 
-RxJs Angular Başlangıç Teması
+**Operatör Özelliği:** Retry Operatörü veri başarısız gelirse tekrardan gelir içine integer değer alır.
