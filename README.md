@@ -62,37 +62,37 @@
 
 **3_3 MergeMap Operator Özelliği:** MergeMap Operatörü Dıştaki observable'yi bekletiyor ve bütün veriyi aldıktan sonra hepsini yayınlar. Api'larda çok kullanılır çekilen veriyi mergeMap Edip farklı bir api istek yapılabilir.
 
-**3_4 Switch Operator Özelliği:**
+**3_4 Switch Operator Özelliği:** SwitchMap Operatörü mergemap gibi bütün verileri çekmesini bekler ve son gelen veriyi yayınlar. Api iç içe istek yapılabilir. Observable'leri birleştirmeye yarar.
 
-**3_5 ConcatMap Operator Özelliği:**
+**3_5 ConcatMap Operator Özelliği:** ConcatMap Operatörü mergemap 'de benzer ama ConcatMap Operatörünün içindeki veriler bitmeden yayınlamasına izin vermez.
 
-**3_6 ToArray Operator Özelliği:**
+**3_6 ToArray Operator Özelliği:** Veriyi array çevirir.
 
-**3_7 Reduce Operator Özelliği:**
+**3_7 Reduce Operator Özelliği:** Reduce Operatörü Sarı aralıgını veya index aralıgını toplamaya veya index yazdırmaya yarar.
 
 
 ## Combination Operatos
 
-**4_1 Merge Operator Özelliği:**
+**4_1 Merge Operator Özelliği:** Operatörleri birbirine bağlamaya yarar ve tek cıkış datası yaratır.
 
-**4_2 MergeAll Operator Özelliği:**
+**4_2 MergeAll Operator Özelliği:** MergeAll Operatörü Dataları eş zamanlı birleştirebilir, Birden fazla değer gönderebilir ve çoklu değer gelişide sınırlanabilir.
 
-**4_3 StartWith Operator Özelliği:**
+**4_3 StartWith Operator Özelliği:** StartWith Operatörü başlangıç değeri verir.
 
-**4_4 FrokJoin Operator Özelliği:**
+**4_4 FrokJoin Operator Özelliği:** ForkJoin Operatörü birder fazla observable alabilir ve içindeki bütün observable'ler yayınlaması bittikten sonra veriyi yayınlar.
 
-**4_5 WithLatestFrom Operator Özelliği:**
+**4_5 WithLatestFrom Operator Özelliği:** WithLatestFrom Operatörü tanımlanan observablenin son degeriyi alır ve durdurur. interval den gelen verinin sadece anlık gelir hepsini yayınlamaz devamlı.
 
-**4_6 Concat Operator Özelliği:**
+**4_6 Concat Operator Özelliği:** Concat Operatörü observable'leri birleştirir ama sırayla tek tek yayınlar biri bitmeden diğerini yayınlamaz.
 
 
 ## Utility Operators
 
-**5_1 Tap Operator Özelliği:**
+**5_1 Tap Operator Özelliği:** Tap Operatörü akışı bozmadan dışarı veri atar örnek olarak loglama yapılabilir.
 
-**5_1 DelayWhen Operator Özelliği:**
+**5_1 DelayWhen Operator Özelliği:** DelayWhen Operatörü saniye bazında çalışmaz, dışardan bir observable alır ve o observable çalışana kadar ana observableyi bekletir ve özellikle veri gelene kadar observable çalışmamış olur. Observableyi bekletir.
 
-**5_1 Finalize Operator Özelliği:**
+**5_1 Finalize Operator Özelliği:** Observable veri çekme işlemini bitirdikten sonra gönderilcek method. Observable devamınına girmez dışarı veri atar.
 
 **5_1 Repeat Operator Özelliği:**
 
